@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +16,15 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
         }
     </style>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -33,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Pagina Principal</a>
+                        <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="noticias.html">Noticias</a>
@@ -54,90 +58,104 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Cuenta</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <main class="container mt-5">
-
         <div class="row mb-5 justify-content-center">
             <div class="col-lg-9">
                 <div class="card text-bg-dark shadow">
                     <img src="img/gta6.jpg" class="card-img-top" alt="Noticia GTA 6">
                     <div class="card-body p-4">
                         <span class="badge text-bg-danger mb-2">Última Hora</span>
-                        <h2 class="card-title fw-bold fs-3">Con las filtraciones de GTA 6 se está haciendo "una montaña
-                            de un grano de arena", dice un veterano de Rockstar</h2>
-                        <p class="card-text mt-2">Para Obbe Vermeij, antiguo director técnico de Rockstar North, los
-                            'leakers' no han tocado hueso aún.</p>
+                        <h2 class="card-title fw-bold fs-3">Con las filtraciones de GTA 6 se está haciendo "una montaña de un grano de arena", dice un veterano de Rockstar</h2>
+                        <p class="card-text mt-2">Para Obbe Vermeij, antiguo director técnico de Rockstar North, los 'leakers' no han tocado hueso aún.</p>
                         <a href="noticias.html" class="btn btn-primary btn-sm mt-2">Leer noticia completa</a>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="bg-white text-black p-3 mb-4 rounded shadow-sm d-inline-block">
-            <h2 class="mb- border-bottom pb-2">Noticias Recientes</h2>
+            <h2 class="mb-0 border-bottom pb-2">Noticias Recientes</h2>
         </div>
-
+        
         <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-
             <div class="col">
                 <div class="card h-100 shadow-sm border-0 bg-light">
                     <img src="img/thewitcher.webp" class="card-img-top" alt="The Witcher 4"
                         style="object-fit: cover; height: 200px;">
                     <div class="card-body">
                         <span class="badge text-bg-warning mb-2">VideoJuegos</span>
-                        <h5 class="card-title fw-bold">Es oficial: The Witcher 4 ya tiene ventana de lanzamiento, aunque
-                            el RPG de fantasía tardará en llegar</h5>
-                        <p class="card-text">CD Projekt ha confirmado de forma previa al inicio de la Gamescom 2026 que
-                            la aventura de Ciri estará disponible en 2028.</p>
+                        <h5 class="card-title fw-bold">Es oficial: The Witcher 4 ya tiene ventana de lanzamiento, aunque el RPG de fantasía tardará en llegar</h5>
+                        <p class="card-text">CD Projekt ha confirmado de forma previa al inicio de la Gamescom 2026 que la aventura de Ciri estará disponible en 2028.</p>
                     </div>
                     <div class="card-footer bg-transparent border-top-0 pt-0">
-                        <a href="videojuegos/historia.html" class="btn btn-outline-secondary btn-sm">Leer artículo</a>
+                        <a href="noticias/witcher4.html" class="btn btn-outline-secondary btn-sm">Leer artículo</a>
                     </div>
                 </div>
             </div>
-
             <div class="col">
                 <div class="card h-100 shadow-sm border-0 bg-light">
                     <img src="img/1200_800.jpeg" class="card-img-top" alt="Bethesda"
                         style="object-fit: cover; height: 200px;">
                     <div class="card-body">
                         <span class="badge text-bg-info mb-2 text-white">Industria</span>
-                        <h5 class="card-title fw-bold">Bethesda no solía sufrir recortes, pero desde la compra de
-                            Microsoft hay una nueva y temida normalidad que se repite cada año</h5>
-                        <p class="card-text">Varios trabajadores de Bethesda y el sindicato OneBGS denuncian despidos
-                            anuales recurrentes, pérdida de conocimiento clave y prácticas laborales.</p>
+                        <h5 class="card-title fw-bold">Bethesda no solía sufrir recortes, pero desde la compra de Microsoft hay una nueva y temida normalidad que se repite cada año</h5>
+                        <p class="card-text">Varios trabajadores de Bethesda y el sindicato OneBGS denuncian despidos anuales recurrentes, pérdida de conocimiento clave y prácticas laborales.</p>
                     </div>
                     <div class="card-footer bg-transparent border-top-0 pt-0">
-                        <a href="videojuegos/industria.html" class="btn btn-outline-secondary btn-sm">Leer artículo</a>
+                        <a href="noticias/bethesda.html" class="btn btn-outline-secondary btn-sm">Leer artículo</a>
                     </div>
                 </div>
             </div>
-
             <div class="col">
                 <div class="card h-100 shadow-sm border-0 bg-light">
                     <img src="img/mario.jpeg" class="card-img-top" alt="Nintendo"
                         style="object-fit: cover; height: 200px;">
                     <div class="card-body">
                         <span class="badge text-bg-success mb-2">Industria</span>
-                        <h5 class="card-title fw-bold">La batalla que nunca acabará: Nintendo está luchando de nuevo
-                            contra la piratería</h5>
-                        <p class="card-text">Nintendo ha eliminado más de 400 repositorios relacionados con emuladores
-                            de Switch en un solo día.</p>
+                        <h5 class="card-title fw-bold">La batalla que nunca acabará: Nintendo está luchando de nuevo contra la piratería</h5>
+                        <p class="card-text">Nintendo ha eliminado más de 400 repositorios relacionados con emuladores de Switch en un solo día.</p>
                     </div>
                     <div class="card-footer bg-transparent border-top-0 pt-0">
-                        <a href="videojuegos/retro.html" class="btn btn-outline-secondary btn-sm">Leer artículo</a>
+                        <a href="noticias/nintendo.html" class="btn btn-outline-secondary btn-sm">Leer artículo</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
-</body>
+    <footer id="contacto" class="bg-dark text-white pt-5 pb-3 mt-auto">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold">MegaGames</h5>
+                    <p>Tu portal definitivo para encontrar las últimas noticias, filtraciones y análisis del mundo de los videojuegos.</p>
+                </div>
+                
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold">Soporte</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Centro de Ayuda</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Términos de Servicio</a></p>
+                </div>
 
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold">Contacto</h5>
+                    <p>📍 Av. Providencia 1234, Santiago, Chile</p>
+                    <p>📧 contacto@megagames.com</p>
+                </div>
+            </div>
+            
+            <hr class="mb-4">
+            
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2026 MegaGames. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
